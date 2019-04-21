@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#chart').attr('src', url) 
     
     $(function(){
-        $('#dcolor01').click(function() {
+        $('#btn01').click(function() {
             var instance = $('#instances').find(":selected").text();
             url = 'https://willtl.github.io/IJPE/' + instance + '.html'
             $('#chart').attr('src', url)  
@@ -12,6 +12,13 @@ $(document).ready(function() {
             
         });
     });
+    
+    $("#instances").change(function(){ 
+        var instance = $('#instances').find(":selected").text();
+        url = 'https://willtl.github.io/IJPE/' + instance + '.html'
+        $('#chart').attr('src', url)  
+    });
+    
 })
 
   
