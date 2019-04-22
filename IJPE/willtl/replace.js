@@ -15,7 +15,7 @@ $(document).ready(function() {
     
     $("#instances").change(function(){ 
         var instance = $('#instances').find(":selected").text();
-        url = 'https://willtl.github.io/IJPE/' + instance + '.html'
+        url = 'https://willtl.github.io/IJPE/experiment01/' + instance + '.html'
         $('#chart').attr('src', url)  
     });
     
